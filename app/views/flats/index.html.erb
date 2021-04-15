@@ -1,0 +1,11 @@
+<% @flats.each do |flat| %>
+<div class="card col-sm-12 col-md-6 col-lg-3" style="margin: 10px 10px 10px 10px">
+  <div class="card-body" >
+    <h5 class="card-title"><%= flat.name %></h5>
+    <h6 class="card-subtitle mb-2 text-muted">Address: <%= flat.address %></h6>
+    <p class="card-text">Description: <%= flat.description %></p>
+    <p class="card-text"><%= flat.price_per_night %> Euro</p>
+    <p class="card-text"><%= flat.number_of_guests %> Guests per night</p>
+  </div>
+</div>
+<% end %>
